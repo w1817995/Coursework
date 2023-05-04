@@ -1,4 +1,4 @@
-//Elis morina did the all the front end of this page and Fareed khan mohamed rafi helped on back end
+//Elis morina did this page 
 import React, { useState } from "react";
 import { Button, Input, LabelText, Page } from "govuk-react";
 import { Link } from "react-router-dom";
