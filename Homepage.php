@@ -1,3 +1,4 @@
+//Fareed Khan Mohamed Rafi did this page
 <?php
 session_start();
 header('Access-Control-Allow-Origin: *');
