@@ -1,4 +1,5 @@
 <?php
+//Fareed Khan Mohamed Rafi coded the whole page
 session_start();
 header('Access-Control-Allow-Origin: *');
 $date = $_POST['dates'];
