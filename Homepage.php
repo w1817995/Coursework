@@ -1,5 +1,5 @@
-//Fareed Khan Mohamed Rafi did this page
 <?php
+//Fareed Khan Mohamed Rafi did this page
 session_start();
 header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');
