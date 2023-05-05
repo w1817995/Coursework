@@ -1,4 +1,4 @@
-//Fareed Khan Mohamed Rafi coded this whole page
+//Fareed Khan Mohamed Rafi did this whole page
 import React, { useEffect, useState } from 'react';
 import { Button, Fieldset,Page,H1, Label,Footer,Input } from 'govuk-react';
 import $ from 'jquery';
@@ -10,13 +10,13 @@ function BookAppointments(props) {
   });
   const[auth,setAuth] = useState('');
   const[auth2,setAuth2] = useState('');
+  
 
   const handleInputChange = (event) => {
     setData({ ...data, [event.target.name]: event.target.value });
     console.log(data);
   };
 
-  var url_info = `http://localhost:4000/Appointment.php?nhs=${auth}&staffid=${auth2}`;
 
   useEffect(() =>{
     var auth = sessionStorage.getItem('nhs');
@@ -38,24 +38,24 @@ function BookAppointments(props) {
   const handleSubmit = (event) => {
     event.preventDefault();
     $.ajax({
-      url: url_info,
+      url: `http://localhost:4000/Appointment.php?nhs=${auth}&staffid=${auth2}`,
       method: "POST",
       data: data,
-      dataType:'json',
       success: (response) => {
         console.log("Server response: ",response);
+        window.sessionStorage.setItem('dates',data.dates);
+        window.sessionStorage.setItem('timer',data.timer);
         window.location.replace("/AppConfirmation");
-
       },
       error: (error) => console.log(error)
     });
   };
+  
 
   return (
     <Page>
       <H1>Book Appointments</H1>
-      <p>Your NHS Number is: {auth}</p>
-      <p>Your staff ID is: {auth2}</p>
+
       <form onSubmit={handleSubmit}>
         <Fieldset>
           <Label htmlFor="date">Date:</Label>

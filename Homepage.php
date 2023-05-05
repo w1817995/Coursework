@@ -1,5 +1,5 @@
 <?php
-//Fareed Khan Mohamed Rafi did this page
+//Fareed Khan Mohamed Rafi helped me with the whole page
 session_start();
 header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');

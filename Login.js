@@ -1,6 +1,5 @@
-//Elis morina did this page 
 import React, { useState } from "react";
-import { Button, Input, LabelText, Page } from "govuk-react";
+import { Button, Input, LabelText, Page,Footer } from "govuk-react";
 import { Link } from "react-router-dom";
 import $ from "jquery";
 
@@ -79,6 +78,18 @@ function Login() {
       <br/>
         <Link to="/Register">Don't have an account? Register here</Link>
       </p>
+      <div className="footer">
+        <Footer
+          copyright={{
+            image: {
+              height: 102,
+              src: 'https://ministryofinjustice.co.uk/wp-content/uploads/2022/03/Crown-Copyright.jpg',
+              width: 125
+            },
+            link: 'https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/',
+          }}
+        />
+      </div>
     </Page>
   );
 }

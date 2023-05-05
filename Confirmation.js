@@ -1,14 +1,16 @@
-//Fareed Khan Mohamed Rafi coded this whole page
 import { Panel,Page, Button,Link } from "govuk-react";
-
+import React from "react";
 const Confirmation = () =>{
 
 return(
  <>
    <Page>
      <Panel title="Registration Success"/>
-     <Link href="/">
+     <Link href="Login">
      <Button>Login</Button>
+     </Link>
+     <Link>
+     <Button>De-Register</Button>
      </Link>
    </Page>
  </>

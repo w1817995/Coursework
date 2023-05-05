@@ -1,5 +1,5 @@
 <?php
-//Fareed Khan Mohamed Rafi coded this whole page
+//Fareed Khan Mohamed Rafi did the whole page
 header('Access-Control-Allow-Origin: *');
 
 try {

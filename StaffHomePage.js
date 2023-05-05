@@ -43,7 +43,6 @@ function HomePage(props) {
   return (
     <Page>
       <h1>Welcome to the Staff Homepage</h1>
-      <p>Your Staff ID is {auth}</p>
       <div>
         <Button onClick={toggleDropdown} className="menu-button">
           {dropdownOpen ? "Hide Menu" : "Menu"}

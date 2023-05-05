@@ -127,22 +127,21 @@ function SignUp() {
         <br/>
         <Button type="submit">Register</Button>
         <br/>
-        <Link href="/">Already have an account? Login</Link>
+        <Link href="Login">Already have an account? Login</Link>
       </form>
       <br/>
       <div className="footer_2">
-          <Footer
-     copyright={{
-     image: {
-      height: 102,
-      src: '../Media/assets/images/govuk-crest.png',
-      width: 125
-    },
-    link: 'https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/',
-    text: 'Crown copyright'
-  }}
- />
- </div>
+        <Footer
+          copyright={{
+            image: {
+              height: 102,
+              src: 'https://ministryofinjustice.co.uk/wp-content/uploads/2022/03/Crown-Copyright.jpg',
+              width: 125
+            },
+            link: 'https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/',
+          }}
+        />
+      </div>
     </Page>
   );
 }

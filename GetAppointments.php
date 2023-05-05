@@ -19,3 +19,4 @@ try {
     // output error message and error code
     echo 'Error fetching data: ' . $e->getMessage() . ' (code: ' . $e->getCode() . ')';
 }
+?>
