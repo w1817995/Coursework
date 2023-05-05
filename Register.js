@@ -1,4 +1,5 @@
-//Elis morina did the all the front end of this page, Fareed khan mohamed rafi did the whole back end and Saad fasial helped all around this page.
+//Muhammad Saad Faisal and Elis Morina helped with the rest of the pages
+//Fareed Khan Mohamed Rafi did lines 8-35
 import React, { useState } from "react";
 import { Button, LabelText, Page, Select,Input,Link,Footer,H1 } from "govuk-react";
 import $ from "jquery";

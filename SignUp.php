@@ -1,6 +1,6 @@
 <?php
-//Fareed Khan coded this whole page
-
+//Fareed Khan Mohamed Rafi did lines 4-22.
+//Muhammad Saad Faisal helped with the rest of the pages.
 session_start();
 header('Access-Control-Allow-Origin: *');
 $firstname = $_POST['fname'];
