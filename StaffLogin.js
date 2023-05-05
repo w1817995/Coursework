@@ -1,4 +1,3 @@
-//Fareed Khan Mohamed Rafi did this page 
 import React, { useState, useEffect } from "react";
 import { Button, Input, LabelText, Page } from "govuk-react";
 import $ from "jquery";
@@ -42,7 +41,7 @@ function StaffLogin() {
           window.sessionStorage.setItem('email', data.email);
           window.sessionStorage.setItem('pass', data.pass);
           setStaffID(response.StaffID);
-          window.location.replace(`/HomePage?staffid=${response.StaffID}`);
+          window.location.replace(`/StaffHomePage?staffid=${response.StaffID}`);
         } else {
           alert(response.message);
         }
