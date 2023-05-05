@@ -1,6 +1,6 @@
 //Elis morina did this page
 import React, { useEffect, useState } from "react";
-import { Page, Button,UnorderedList,Link,ListItem } from "govuk-react";
+import { Page, Button,UnorderedList,Link,ListItem,H1 } from "govuk-react";
 import $ from 'jquery';
 
 function HomePage(props) {
@@ -45,10 +45,7 @@ function HomePage(props) {
 
   return (
     <Page>
-      <h1>Welcome to the Homepage</h1>
-      <p>This is the homepage content after a successful login.</p>
-      <p>Your NHS Number is {auth}</p>
-      <p>Your staff ID is {auth2}</p>
+      <H1>Welcome to the Patient Homepage</H1>
       <div>
         <Button onClick={toggleDropdown} className="menu-button">
           {dropdownOpen ? "Hide Menu" : "Menu"}
@@ -62,7 +59,7 @@ function HomePage(props) {
               <Link href="/BookApp"><Button>Appointments</Button></Link>
             </ListItem>
             <ListItem>
-              <Link href="/patient-records"><Button>Patient Records</Button></Link>
+              <Link href="/Cancel"><Button>Cancel Appointments</Button></Link>
             </ListItem>
           </UnorderedList>
         )}
