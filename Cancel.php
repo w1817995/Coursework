@@ -1,4 +1,5 @@
 <?php
+//Nasteha Omar Ahmed did the whole page
 // Retrieve the appointment data from the request
 $appointment = $_POST['appointment'];
 // Sanitize the input to prevent SQL injection attacks

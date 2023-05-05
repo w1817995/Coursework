@@ -1,5 +1,5 @@
 <?php
-
+//Nasteha Omar Ahmed did the whole page
 header('Access-Control-Allow-Origin: *');
 
 try {
