@@ -35,6 +35,7 @@ function Display() {
     <Page>
     <div>
       <H1>View Appointments</H1>
+      <p>Your appointments has been booked below</p>
        {
         data.map(app => (
           <div key={app.staffID}>
