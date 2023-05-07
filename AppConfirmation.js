@@ -7,8 +7,8 @@ return(
  <>
    <Page>
      <Panel title="Appointment Booked"/>
-     <Link href="StaffHomePage">
-     <Button>Go to Staff Home Page to view your appointments</Button>
+     <Link href="StaffLogin">
+     <Button>Login as Staff to view your appointments</Button>
      </Link>
    </Page>
  </>
